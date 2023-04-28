@@ -21,6 +21,10 @@ $ clang++ xx.cpp
 clang++ -Xclang -ast-print -fsyntax-only xx.cpp
 ```
 
+* run example
+```
+clang++ -o build/blist.exe  src/driver.cpp -O0 -g -Wall -Wno-unused-parameter -Wextra -Wconversion -Wold-style-cast -std=c++14 -pedantic -Wold-style-cast
+```
 
 # Chapter 1
 ## 1.4.4.0.cpp
