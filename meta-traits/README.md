@@ -18,7 +18,7 @@ $ clang++ xx.cpp
 
 * print the ast
 ```
-clang++ -Xclang -ast-print -fsyntax-only xx.cpp
+$ clang++ -Xclang -ast-print -fsyntax-only xx.cpp
 ```
 
 * run example

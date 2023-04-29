@@ -1,15 +1,16 @@
-# cpp-tips
+# Setup
 
 * Options: [cppinsights](https://cppinsights.io/) and clang
 
-
-## clang setup
 * [Reducing Template Compilation Overhead, Using C++11, 14](https://www.youtube.com/watch?v=TyiiNVA1syk)
 
 
 ```
 apt install clang clang-tidy clang-tools clang-format cppcheck doxygen graphviz
 ```
+
+# Essential Packages
+
 * libgtest-dev
 * libgoogle-glog-dev
 
@@ -64,6 +65,27 @@ Description: Documentation system for C, C++, Java, Python and other languages
  Install the doxygen-latex package to build LaTeX based documents.
 ```
 
+* libboost-all-dev
+
+The emphasis is on libraries which work well with the C++ Standard Library.
+One goal is to establish "existing practice" and provide reference implementations so that the Boost libraries are suitable for eventual standardization. 
+Some of the libraries have already been proposed for inclusion in the C++ Standards Committee's upcoming C++ Standard Library Technical Report.
+
+This metapackage provides the complete Boost development environment, including all separately-packaged libraries.
+
+Install the Boost C++ via Source Code:
+```
+$ sudo apt install build-essential python3-dev g++ autotools-dev libicu-dev libbz2-dev -y
+
+# following command starts the Bootstrap script and builds the B2 engine:
+$ sudo ./bootstrap.sh --prefix=/usr/
+
+# run the generated B2 engine:
+$ ./b2
+
+# Lastly, install the Boost C++ using the B2.
+$ sudo ./b2 install
+```
 
 ## [Clang-Format Style](https://clang.llvm.org/docs/ClangFormatStyleOptions.html)
 * https://www.clangpowertools.com/blog/getting-started-with-clang-format-style-options.html
