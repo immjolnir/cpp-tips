@@ -13,12 +13,12 @@ void bbegin();
 typedef mpl::list<long, float, short, double, float, long, long double> types;
 typedef mpl::fold<types, mpl::int_<0>,
                   mpl::if_<boost::is_float<mpl::_2>, mpl::next<mpl::_1>, mpl::_1> >::type
-    number_of_floats;
+  number_of_floats;
 
 void eend();
 
 int main() {
-  static_assert(number_of_floats::value == 4, "it should has 4 floats.");
+    static_assert(number_of_floats::value == 4, "it should has 4 floats.");
 
-  return 0;
+    return 0;
 }
