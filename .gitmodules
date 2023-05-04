@@ -4,3 +4,6 @@
 [submodule "3rdparty/Modern-CPP-Programming-Cookbook-Second-Edition"]
 	path = 3rdparty/Modern-CPP-Programming-Cookbook-Second-Edition
 	url = https://github.com/PacktPublishing/Modern-CPP-Programming-Cookbook-Second-Edition.git
+[submodule "3rdparty/sanitizers"]
+	path = 3rdparty/sanitizers
+	url = https://github.com/google/sanitizers.git
