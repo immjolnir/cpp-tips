@@ -7,3 +7,6 @@
 [submodule "3rdparty/sanitizers"]
 	path = 3rdparty/sanitizers
 	url = https://github.com/google/sanitizers.git
+[submodule "3rdparty/modern-cpp-tutorial"]
+	path = 3rdparty/modern-cpp-tutorial
+	url = https://github.com/changkun/modern-cpp-tutorial.git
