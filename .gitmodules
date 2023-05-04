@@ -1,3 +1,6 @@
 [submodule "3rdparty/cmake-init"]
 	path = 3rdparty/cmake-init
 	url = https://github.com/friendlyanon/cmake-init.git
+[submodule "3rdparty/Modern-CPP-Programming-Cookbook-Second-Edition"]
+	path = 3rdparty/Modern-CPP-Programming-Cookbook-Second-Edition
+	url = https://github.com/PacktPublishing/Modern-CPP-Programming-Cookbook-Second-Edition.git
