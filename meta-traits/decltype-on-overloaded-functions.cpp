@@ -16,4 +16,6 @@ int main() {
     static_assert(std::is_same<TestType<double, double>, int(double, double)>::value, "1");
     static_assert(std::is_same<TestType<int, int>, double(int, int)>::value, "2");
     static_assert(std::is_same<TestType<char, int>, int(char, int)>::value, "3");
+
+    return 0;
 }
