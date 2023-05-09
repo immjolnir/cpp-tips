@@ -10,3 +10,7 @@
 [submodule "3rdparty/modern-cpp-tutorial"]
 	path = 3rdparty/modern-cpp-tutorial
 	url = https://github.com/changkun/modern-cpp-tutorial.git
+[submodule "3rdparty/MetaNN"]
+	path = 3rdparty/MetaNN
+	url = https://github.com/liwei-cpp/MetaNN.git
+	branch = book_v2
