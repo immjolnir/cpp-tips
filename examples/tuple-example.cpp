@@ -17,8 +17,6 @@ struct Student {
     }
 };
 
-
-
 // https://en.cppreference.com/w/cpp/utility/integer_sequence
 // convert array into a tuple
 template <typename Array, std::size_t... I>

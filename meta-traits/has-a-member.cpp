@@ -16,7 +16,9 @@ struct Bar {
 
 struct FooDog {
     int hello() { return 0; }
+
     int hello(int i) { return i + 1; }
+
     int hello(int i, const std::string& str) { return i + 1; }
 };
 
@@ -28,6 +30,7 @@ struct Baz {
 template <typename T>
 class has_hello {
     typedef char One;
+
     struct Two {
         char x[2];
     };
@@ -40,7 +43,7 @@ class has_hello {
     template <typename C>
     static Two test(...);
 
-   public:
+  public:
     enum { value = (sizeof(test<T>(0)) == sizeof(char)) };
 };
 
