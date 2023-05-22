@@ -40,3 +40,8 @@ It's a fix to the issue as above.
 Moving the loop(template substitution) out of the `Wrap_` struct.
 
 Better putting them under a namespace.
+
+
+## [C++20 idioms for parameter packs](https://www.scs.stanford.edu/~dm/blog/param-pack.html)
+
+* https://stackoverflow.com/questions/18942322/effective-way-to-select-last-parameter-of-variadic-template
