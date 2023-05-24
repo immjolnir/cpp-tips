@@ -1,5 +1,6 @@
 // not for main
 // #pragma once
+// See https://en.wikipedia.org/wiki/Dependency_injection
 
 #include <iostream>
 
@@ -10,6 +11,7 @@ class GasolineService {
     void RON97() { std::cout << "RON97!" << std::endl; }
 };
 
+// Constructor injection
 template <typename Policy>
 class Car {
   public:
@@ -21,6 +23,7 @@ class Car {
     Policy* _policy;
 };
 
+// Setter injection
 template <typename Policy>
 class Truck {
   public:

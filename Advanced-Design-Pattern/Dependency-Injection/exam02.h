@@ -1,3 +1,4 @@
+// See https://en.wikipedia.org/wiki/Dependency_injection
 #pragma once
 
 #include <iostream>
@@ -17,6 +18,8 @@ class FuelCan : public GasolineSource {
   public:
     virtual void FuelUp() { std::cout << "Pumping gas from fuel can" << std::endl; }
 };
+
+// Interface injection
 
 class Car {
     GasolineSource* gasolineService = nullptr;
