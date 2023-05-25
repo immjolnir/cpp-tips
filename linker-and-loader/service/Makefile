@@ -8,10 +8,11 @@ service.o: service.cpp
 	g++ -std=c++14 -fPIC -c service.cpp -I ../dynamic-lib
 
 
+# It will append service.o into the libservice.a if it exists.
 .PHONY: all
 all: service.o
 	if [ x"$(target)" = x"static" ]; then \
-		ar -cq libservice.a service.o; \
+		rm libservice.a && ar -cq libservice.a service.o; \
 	else \
 		g++ -shared service.o -o libservice.so; \
 	fi
