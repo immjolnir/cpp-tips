@@ -47,3 +47,30 @@ include "..." search starts here:
  /usr/include/x86_64-linux-gnu
  /usr/include
 ```
+
+
+## How to fix GCC error: invalid use of incomplete type ‘class …’?
+* Problem:
+You are compiling a C/C++ program using GCC. You get an error message similar to this:
+```
+error: invalid use of incomplete type ‘class SomeType’
+```
+
+* Solution:
+There are multiple possible issues, but in general this error means that GCC can’t find the full declaration of the given class or struct.
+
+The most common issue is that you are missing an `#include` clause. Find out in which header file the declaration resides, i.e. if the error message mentions class Map, look for something like
+```
+class Map {
+   // ...
+};
+```
+
+Usually the classes reside in header files that are similar to their name, e.g. `MyClass` might reside in a header file that is called `MyClass.h`, `MyClass.hpp` or` MyClass.hxx`, so be sure to look for those files first. 
+
+Note that you might also be looking for a type from a library.
+Often the best approach is to google C++ <insert the missing type here> to find out where it might be located.
+
+Another possible reason is that you have your `#include` clause after the line where the error occurs. If this is the case, ensure that all required types are included before they are used.
+
+
