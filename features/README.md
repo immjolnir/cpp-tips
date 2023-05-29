@@ -75,3 +75,24 @@ Member variables are stored in the same order as they are declared.
 exam01.cpp:12:48: warning: ‘template<class _Tp> struct std::is_pod’ is deprecated: use is_standard_layout && is_trivial instead [-Wdeprecated-declarations]
    12 |     std::cout << "base_pod_t is POD: " << std::is_pod<base_pod_t>::value << std::endl;
 ```
+
+
+## Const Member Functions
+The `const` member functions are the functions which are declared as constant in the program.
+The object called by these functions cannot be modified. It is recommended to use `const` keyword so that accidental changes to object are avoided.
+
+A `const` member function can be called by any type of object. Non-`const` functions can be called by non-`const` objects only.
+
+Here is the syntax of const member function in C++ language,
+```c++
+datatype function_name const();
+```
+
+Here is an example of const member function in C++,
+
+* https://stackoverflow.com/questions/3141087/what-is-meant-with-const-at-end-of-function-declaration
+* http://www.parashift.com/c++-faq-lite/const-correctness.html
+
+A good thing. It means using the keyword `const` to prevent `const` objects from getting mutated.
+
+
