@@ -14,3 +14,6 @@
 	path = 3rdparty/MetaNN
 	url = https://github.com/liwei-cpp/MetaNN.git
 	branch = book_v2
+[submodule "3rdparty/Mastering-ROS-for-Robotics-Programming-Third-edition"]
+	path = 3rdparty/Mastering-ROS-for-Robotics-Programming-Third-edition
+	url = https://github.com/PacktPublishing/Mastering-ROS-for-Robotics-Programming-Third-edition.git
