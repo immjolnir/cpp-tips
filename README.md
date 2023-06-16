@@ -1,4 +1,4 @@
-# cpp-tips
+# Handy Cpp
 
 * Options: [cppinsights](https://cppinsights.io/) and clang
 

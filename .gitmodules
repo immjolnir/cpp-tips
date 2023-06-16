@@ -17,3 +17,6 @@
 [submodule "3rdparty/Mastering-ROS-for-Robotics-Programming-Third-edition"]
 	path = 3rdparty/Mastering-ROS-for-Robotics-Programming-Third-edition
 	url = https://github.com/PacktPublishing/Mastering-ROS-for-Robotics-Programming-Third-edition.git
+[submodule "3rdparty/cpprestsdk"]
+	path = 3rdparty/cpprestsdk
+	url = https://github.com/microsoft/cpprestsdk.git
